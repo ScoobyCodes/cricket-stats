@@ -1,0 +1,21 @@
+
+#piechart1 , #piechart {
+    height: 400px;
+    width: 600px;
+}
+@media (max-width: 600px) {
+    .imagesProfile {
+        display: none;
+    }
+
+    .profileStats {
+        position: relative;
+        top : 100px;
+    }
+
+    #piechart , #piechart1 {
+        height: 300px;
+        width: 300px;
+    }
+
+}

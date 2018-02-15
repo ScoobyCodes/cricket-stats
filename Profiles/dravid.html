@@ -5,52 +5,10 @@
     <link rel="icon" href="../images/profile/rd51.jpg">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="../Resources/materialize/css/materialize.min.css" media="screen,projection">
+    <link rel="stylesheet" href="profile.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-        google.charts.load('current', {'packages':['corechart']});
-        google.charts.setOnLoadCallback(drawChart);
-
-        function drawChart() {
-
-            var data = google.visualization.arrayToDataTable([
-                ['Country', 'RunsScored'],
-                ['Australia',     974],
-                ['England',      1012],
-                ['Pakistan',  1899],
-                ['SouthAfrica', 1309],
-                ['SriLanka',    1662],
-                ['Bangladesh',    197],
-                ['Scotland',    10],
-                ['WestIndies',    1348],
-                ['Zimbawe',    885],
-                ['NewZealand',    1032],
-            ]);
-            var data1 = google.visualization.arrayToDataTable([
-                ['Country', 'RunsScored'],
-                ['Australia',     2116],
-                ['England',      1950],
-                ['Pakistan',  1236],
-                ['SouthAfrica', 1252],
-                ['SriLanka',    1508],
-                ['Bangladesh',    560],
-                ['WestIndies',    1978],
-                ['Zimbawe',    979],
-                ['NewZealand',    1659],
-            ]);
-            var options = {
-                title: "PERFORMANCE BY COUNTRY(in ODI's)",
-                wmode: 'opaque' ,
-            };
-            var options1 = {
-                title: "PERFORMANCE BY COUNTRY(in Test)",
-            };
-            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-            var chart1 = new google.visualization.PieChart(document.getElementById('piechart1'));
-            chart.draw(data, options);
-            chart1.draw(data1,options1);
-        }
-    </script>
+    <script type="text/javascript" src="googleChart.js"></script>
 </head>
 <body>
 <ul id="slide-out" class="side-nav">
@@ -71,8 +29,9 @@
 
 </ul>
 <a href="#" data-activates="slide-out" class="button-collapse waves-effect" style="position: relative; top: 50px; left: 40px;"><i class="material-icons" style="color: #fc4f4c;">menu</i></a>
-<div class="carousel" style="position: relative; height: 400px; width: 1300px; left: 50px; top: -120px;">
-    <a class="carousel-item" href="#one!  ><img class="materialboxed" src="images/profile/rd1.jpg"></a>
+
+<div class="carousel imagesProfile" style="position: relative; height: 400px; width: 1300px; left: 50px; top: -120px;">
+    <a class="carousel-item" href="#one!" ><img class= "materialboxed" src="images/profile/rd1.jpg"></a>
     <a class="carousel-item" href="#two!"  ><img class="materialboxed" src="../images/profile/rd2.jpg"></a>
     <a class="carousel-item" href="#three!" ><img class="materialboxed" src="../images/profile/rd4.jpg"></a>
     <a class="carousel-item" href="#four!" ><img class="materialboxed" src="../images/profile/rdq7.jpg"></a>
@@ -81,10 +40,11 @@
     <a class="carousel-item" href="#three!" ><img class="materialboxed" src="../images/profile/rdq5.jpg"></a>
     <a class="carousel-item" href="#three!" ><img class="materialboxed" src="../images/profile/rdq6.jpg"></a>
 </div>
-<div class="row">
-    <div class="col s5"></div>
-    <div class="col s2" p><a class="waves-effect waves-light btn" href="#modal1"> Stastics</a></div>
-    <div class="col s5"></div>
+
+<div class="row profileStats">
+    <div class="col s3 m5"></div>
+    <div class="col s6 m2" p><a class="waves-effect waves-light btn" href="#modal1"> Stastics</a></div>
+    <div class="col s3 m5"></div>
 </div>
 
 <div id="modal1" class="modal bottom-sheet">
@@ -104,9 +64,10 @@
     </div>
 </div>
 <div class="row" style="position: relative; top: 100px;">
-    <div id="piechart" class="col s6" style="height: 400px; width: 600px;"></div>
-    <div id="piechart1" class="col s6" style="height: 400px; width: 600px; position: relative; left:100px;"></div>
+    <div id="piechart" class="col s12 m6" ></div>
+    <div id="piechart1" class="col s12 m6" ></div>
 </div>
+
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="../Resources/materialize/js/materialize.min.js"></script>
 <script src="profile.js"></script>
