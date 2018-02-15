@@ -1,0 +1,57 @@
+/* Containers for Desktop And Mobile*/
+
+.DesktopContainer {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    flex-flow: row;
+    width: 100%;
+}
+
+.OnThisDayNavigation {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    flex-flow: row;
+}
+
+.PersonalContainer {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    flex-flow: row;
+}
+
+.ThumbSliderContainer {
+    display: flex;
+    align-items: flex-end;
+    box-sizing: border-box;
+    flex-flow: column;
+    width: 100%;
+}
+
+@media (max-width: 1100px) {
+    #sliderFrame {
+        display: none;
+    }
+
+    .DesktopContainer {
+        flex-flow: column;
+    }
+}
+
+/* Containers For Desktop And Mobile*/
+
+/* Css For On this Day Container */
+.popover-title{
+    background-color: #000000 !important;
+    color: #7fa9fe;
+    text-align: center;
+}
+
+.popover-content{
+    background-color: #ddeeae;
+    font-family: "Rage Italic";
+}
+
+/* Css For On this Day Ends */

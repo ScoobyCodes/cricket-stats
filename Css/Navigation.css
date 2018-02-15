@@ -1,0 +1,140 @@
+/*Css For DeskTop View For Navigation Bar.*/
+
+body {
+    overflow: hidden;
+}
+.DeskTopOnlyMenu , .MobileOnlyMenu {
+    background-color: rgba(3,3,11,.9);
+    height : 60px;
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+
+.NavigationItemsDesktop {
+    text-align: center;
+    display : flex;
+    justify-content: space-between;
+    flex-flow: row;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.NavigationItemDesktop {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    padding : 10px;
+}
+
+.NavigationItemDesktop span, .NavigationItemMobile span{
+    color: #45adab;
+    padding: 2px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1000px) {
+    .NavigationItemDesktop{
+        padding: 3px;
+    }
+}
+
+@media(min-width: 500px) {
+    .MobileOnlyMenu {
+        display: none;
+    }
+}
+
+/* Mobile View For Navigation Bar*/
+
+@media (max-width: 500px) {
+    .DeskTopOnlyMenu {
+        display: none;
+    }
+
+    .NavigationItemMobile span {
+        padding: 7px;
+    }
+
+    body {
+        overflow: visible;
+    }
+}
+
+.DrawerToggle {
+    width: 40px;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.DrawerToggle div {
+    width: 90%;
+    height: 3px;
+    background-color: white;
+    margin : 4px
+}
+
+.Backdrop {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+    left:0;
+    top:0;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.NavigationItemMobile {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.NavigationItemsMobile {
+    text-align: center;
+    display : flex;
+    justify-content: space-between;
+    flex-flow: column;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.SideDrawer {
+    position: fixed;
+    width: 280px;
+    max-width: 70%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 200;
+    background-color: rgba(3,3,11,.9);
+    padding: 32px 16px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-out;
+}
+
+.Open {
+    transform: translateX(0);
+}
+
+.Close {
+    transform: translateX(-100%);
+}
+
+
+/* Navigation Css For Both Desktop And Mobile Ends*/
+

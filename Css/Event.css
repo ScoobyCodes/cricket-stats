@@ -1,0 +1,26 @@
+#input{
+    width: 350px;
+}
+
+@media (max-width: 550px) {
+    .module21 , .module22 , .module1 {
+        display: none;
+    }
+
+    .EventOpen {
+        transform: translateY(-200%);
+    }
+}
+
+.EventList {
+    transition: transform 1s ease-out;
+}
+
+.EventOpen {
+    transform: translateY(-120%);
+}
+
+.EventClose {
+    transform: translateY(100%);
+}
+
