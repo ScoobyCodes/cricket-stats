@@ -3,4 +3,4 @@
   Clicking Menu Button on top left opens Details of Upcoming Tournaments And International Cricket Team.
   Clicking On Indian Cricket Team Image On Carousel Opens Profile of Former Indian Skipper "Rahul Dravid".
   Visit:
-  https://scoobycodes.github.io/cricketstats/
+  https://scoobycodes.github.io/cricket-stats/
